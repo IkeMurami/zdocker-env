@@ -1,0 +1,5 @@
+source 'http://rubygems.org'
+
+gem 'rails' #, '5.2.2'
+gem 'irb' # Interactive Ruby — like the console interpretator
+gem 'pg' # For active_record
