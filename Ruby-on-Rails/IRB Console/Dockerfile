@@ -13,5 +13,3 @@ COPY Gemfile.lock Gemfile.lock
 RUN gem install bundler
 # Install All Dependency
 RUN bundle install
-
-# CMD ["/bin/sh"]

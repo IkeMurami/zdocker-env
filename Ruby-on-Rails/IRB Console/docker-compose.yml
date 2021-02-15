@@ -7,15 +7,14 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: rails-irb
-    network_mode: bridge
     restart: always
     depends_on:
      - db
+    tty: true
 
   db:
     image: postgres:alpine
     restart: always
-    network_mode: bridge
     ports:
       - 5432:5432
     environment:
