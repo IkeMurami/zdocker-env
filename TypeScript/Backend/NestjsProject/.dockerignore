@@ -1,0 +1,7 @@
+README.md
+.gitignore
+.vscode
+.idea
+Dockerfile-creater
+Dockerfile-starter
+.DS_Store
