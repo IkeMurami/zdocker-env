@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "name": "example-service",
+  "version": "0.0.1",
+  "description": "Fastify example app",
+  "main": "server.js",
+  "dependencies": {
+    "fastify": "^3.28.0"
+  }
+}
