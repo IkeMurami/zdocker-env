@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  aspnet:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    tty: true
+    ports:
+      - 9099:80
