@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  nginx:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - NGINX_VERSION=1.18
+    restart: always
+    volumes:
+      - ./conf.d/:/etc/nginx/conf.d
+    ports:
+      - 9015:80
