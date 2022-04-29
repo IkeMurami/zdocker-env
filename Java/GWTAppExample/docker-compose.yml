@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  gwtsevice:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: gwt-service
+    restart: always
+    tty: true
+    ports:
+      - 9091:8080
+    volumes:
+      - ./src:/out
+
+

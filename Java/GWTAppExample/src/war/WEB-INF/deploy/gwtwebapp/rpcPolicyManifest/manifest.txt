@@ -1,0 +1,3 @@
+# Module gwtwebapp
+# RPC service class, partial path of RPC policy file
+ike.murami.client.GreetingService, BD9C9E335ABCED00FB2061A20F65E81D.gwt.rpc

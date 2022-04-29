@@ -1,0 +1,2 @@
+serviceClass: ike.murami.client.GreetingService
+path: BD9C9E335ABCED00FB2061A20F65E81D.gwt.rpc
