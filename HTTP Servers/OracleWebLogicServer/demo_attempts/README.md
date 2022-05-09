@@ -1,0 +1,1 @@
+Попытался отделить билд OracleJDK от WebLogic. Не получилось: docker compose не смотрит в локальный registry, а пытается забрать с Docker Hub билд OracleJDK (которого там нет, офк).
