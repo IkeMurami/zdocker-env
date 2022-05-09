@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  oracle_jdk:
+    build: 
+      context: .
+      dockerfile: Dockerfile.oraclejdk
+    image: oraclejdk:11
+    container_name: oracle-jdk
+    restart: always
+    tty: true
+
+  weblogic_server:
+    build:
+      args:
+        - JDK_VERSION=11
+      context: .
+      dockerfile: Dockerfile.weblogic
+    container_name: weblogic-server
+    restart: always
+    tty: true
+    depends_on:
+      - oracle_jdk

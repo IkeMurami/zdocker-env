@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  weblogic:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: oracle-jdk
+    restart: always
+    environment:
+      - ADMIN_NAME=AdminServer
+      - ADMIN_LISTEN_PORT=7001
+      - DOMAIN_NAME=example.local
+      - ADMINISTRATION_PORT_ENABLED=false
+      - ADMINISTRATION_PORT=9002
+    volumes:
+      - ./domain-properties:/u01/oracle/properties
+    ports:
+      - 7001:7001
+      - 9002:9002
+    tty: true
