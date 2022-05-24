@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  myservice:
+    build:
+      context: ..
+      dockerfile: ./deploy/Dockerfile
+    container_name: my-service-actuator
+    restart: always
+    tty: true
+    ports:
+      - 8081:8080
+    
