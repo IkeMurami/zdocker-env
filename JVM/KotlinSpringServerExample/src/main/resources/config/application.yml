@@ -1,0 +1,6 @@
+ikemurami:
+  allow-login: true
+  some: true
+
+services:
+  frontend-url: ${BASE_DOMAIN:http://localhost:3000}
