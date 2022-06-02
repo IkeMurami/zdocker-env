@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  h2_db:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: h2db
+    tty: true
+    ports:
+      - 8099:81
+      - 1521:1521
