@@ -1,0 +1,16 @@
+version: "3.7"
+services:
+  app:
+    build:
+      args:
+        version: 7.4-fpm
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
+    image: php-empty
+    container_name: php-empty-app
+    restart: unless-stopped
+    working_dir: /var/www/
+    volumes:
+      - .:/app
